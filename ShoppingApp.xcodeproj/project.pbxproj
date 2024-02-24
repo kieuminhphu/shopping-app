@@ -1,0 +1,801 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EA0717F32B88404500532648 /* ShoppingAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0717F22B88404500532648 /* ShoppingAppApp.swift */; };
+		EA0717F72B88404700532648 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0717F62B88404700532648 /* Assets.xcassets */; };
+		EA0717FA2B88404700532648 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA0717F92B88404700532648 /* Preview Assets.xcassets */; };
+		EA0718042B88404700532648 /* ShoppingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0718032B88404700532648 /* ShoppingAppTests.swift */; };
+		EA07180E2B88404700532648 /* ShoppingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07180D2B88404700532648 /* ShoppingAppUITests.swift */; };
+		EA0718102B88404700532648 /* ShoppingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07180F2B88404700532648 /* ShoppingAppUITestsLaunchTests.swift */; };
+		EA07181D2B88471F00532648 /* ProductListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07181C2B88471F00532648 /* ProductListView.swift */; };
+		EA0718222B8851A200532648 /* air_force.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA0718212B8851A200532648 /* air_force.usdz */; };
+		EA0718242B8851B300532648 /* pegasus_trail.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA0718232B8851B300532648 /* pegasus_trail.usdz */; };
+		EA07182C2B88527000532648 /* toy_biplane_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA07182B2B88527000532648 /* toy_biplane_idle.usdz */; };
+		EA07182E2B88527B00532648 /* toy_drummer_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA07182D2B88527B00532648 /* toy_drummer_idle.usdz */; };
+		EA0718302B88528100532648 /* toy_car.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA07182F2B88528100532648 /* toy_car.usdz */; };
+		EA0718322B88528700532648 /* robot_walk_idle.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA0718312B88528700532648 /* robot_walk_idle.usdz */; };
+		EA0718342B88528B00532648 /* fender_stratocaster.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA0718332B88528B00532648 /* fender_stratocaster.usdz */; };
+		EA0718362B88531B00532648 /* tv_retro.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA0718352B88531B00532648 /* tv_retro.usdz */; };
+		EA0718382B88531F00532648 /* gramophone.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA0718372B88531F00532648 /* gramophone.usdz */; };
+		EA07183A2B88532300532648 /* wateringcan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA0718392B88532300532648 /* wateringcan.usdz */; };
+		EA07183C2B88532800532648 /* chair_swan.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA07183B2B88532800532648 /* chair_swan.usdz */; };
+		EA07183E2B88535500532648 /* teapot.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA07183D2B88535500532648 /* teapot.usdz */; };
+		EA0718402B88536F00532648 /* flower_tulip.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA07183F2B88536F00532648 /* flower_tulip.usdz */; };
+		EA0718422B88537500532648 /* cup_saucer_set.usdz in Resources */ = {isa = PBXBuildFile; fileRef = EA0718412B88537500532648 /* cup_saucer_set.usdz */; };
+		EA0718512B88539A00532648 /* teapot.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0718432B88539900532648 /* teapot.jpg */; };
+		EA0718522B88539A00532648 /* cupandsaucer.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0718442B88539900532648 /* cupandsaucer.jpg */; };
+		EA0718532B88539A00532648 /* stratocaster.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0718452B88539900532648 /* stratocaster.jpg */; };
+		EA0718542B88539A00532648 /* tulip.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0718462B88539900532648 /* tulip.jpg */; };
+		EA0718552B88539A00532648 /* wateringcan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0718472B88539900532648 /* wateringcan.jpg */; };
+		EA0718562B88539A00532648 /* retrotv.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0718482B88539900532648 /* retrotv.jpg */; };
+		EA0718572B88539A00532648 /* nike-pegasus.png in Resources */ = {isa = PBXBuildFile; fileRef = EA0718492B88539900532648 /* nike-pegasus.png */; };
+		EA0718582B88539A00532648 /* redchair.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA07184A2B88539A00532648 /* redchair.jpg */; };
+		EA0718592B88539A00532648 /* gramophone.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA07184B2B88539A00532648 /* gramophone.jpg */; };
+		EA07185A2B88539A00532648 /* drummertoy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA07184C2B88539A00532648 /* drummertoy.jpg */; };
+		EA07185B2B88539A00532648 /* biplane.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA07184D2B88539A00532648 /* biplane.jpg */; };
+		EA07185C2B88539A00532648 /* nike-air-force.png in Resources */ = {isa = PBXBuildFile; fileRef = EA07184E2B88539A00532648 /* nike-air-force.png */; };
+		EA07185D2B88539A00532648 /* toycar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA07184F2B88539A00532648 /* toycar.jpg */; };
+		EA07185E2B88539A00532648 /* vintagerobot2k.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EA0718502B88539A00532648 /* vintagerobot2k.jpg */; };
+		EA0718612B88565E00532648 /* ProductItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0718602B88565E00532648 /* ProductItemView.swift */; };
+		EA0718652B8890EA00532648 /* ProductionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0718642B8890EA00532648 /* ProductionListViewModel.swift */; };
+		EA0718672B88911E00532648 /* ProductionListView+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0718662B88911E00532648 /* ProductionListView+Configuration.swift */; };
+		EA0718692B88914C00532648 /* ProductionItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0718682B88914C00532648 /* ProductionItemViewModel.swift */; };
+		EA07186D2B88920700532648 /* ProductDetailIOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07186C2B88920700532648 /* ProductDetailIOSView.swift */; };
+		EA07186F2B88967B00532648 /* ProductDetailVisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07186E2B88967B00532648 /* ProductDetailVisionView.swift */; };
+		EA55C3592B8982DB00B8CBB0 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55C3582B8982DB00B8CBB0 /* ProductDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EA0718002B88404700532648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA0717E72B88404500532648 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA0717EE2B88404500532648;
+			remoteInfo = ShoppingApp;
+		};
+		EA07180A2B88404700532648 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EA0717E72B88404500532648 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EA0717EE2B88404500532648;
+			remoteInfo = ShoppingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		EA0717EF2B88404500532648 /* ShoppingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShoppingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0717F22B88404500532648 /* ShoppingAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppApp.swift; sourceTree = "<group>"; };
+		EA0717F62B88404700532648 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA0717F92B88404700532648 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA0717FF2B88404700532648 /* ShoppingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA0718032B88404700532648 /* ShoppingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppTests.swift; sourceTree = "<group>"; };
+		EA0718092B88404700532648 /* ShoppingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoppingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA07180D2B88404700532648 /* ShoppingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITests.swift; sourceTree = "<group>"; };
+		EA07180F2B88404700532648 /* ShoppingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EA07181C2B88471F00532648 /* ProductListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListView.swift; sourceTree = "<group>"; };
+		EA0718212B8851A200532648 /* air_force.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = air_force.usdz; sourceTree = "<group>"; };
+		EA0718232B8851B300532648 /* pegasus_trail.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = pegasus_trail.usdz; sourceTree = "<group>"; };
+		EA07182B2B88527000532648 /* toy_biplane_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_biplane_idle.usdz; sourceTree = "<group>"; };
+		EA07182D2B88527B00532648 /* toy_drummer_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_drummer_idle.usdz; sourceTree = "<group>"; };
+		EA07182F2B88528100532648 /* toy_car.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = toy_car.usdz; sourceTree = "<group>"; };
+		EA0718312B88528700532648 /* robot_walk_idle.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = robot_walk_idle.usdz; sourceTree = "<group>"; };
+		EA0718332B88528B00532648 /* fender_stratocaster.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = fender_stratocaster.usdz; sourceTree = "<group>"; };
+		EA0718352B88531B00532648 /* tv_retro.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = tv_retro.usdz; sourceTree = "<group>"; };
+		EA0718372B88531F00532648 /* gramophone.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = gramophone.usdz; sourceTree = "<group>"; };
+		EA0718392B88532300532648 /* wateringcan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = wateringcan.usdz; sourceTree = "<group>"; };
+		EA07183B2B88532800532648 /* chair_swan.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = chair_swan.usdz; sourceTree = "<group>"; };
+		EA07183D2B88535500532648 /* teapot.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = teapot.usdz; sourceTree = "<group>"; };
+		EA07183F2B88536F00532648 /* flower_tulip.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = flower_tulip.usdz; sourceTree = "<group>"; };
+		EA0718412B88537500532648 /* cup_saucer_set.usdz */ = {isa = PBXFileReference; lastKnownFileType = file.usdz; path = cup_saucer_set.usdz; sourceTree = "<group>"; };
+		EA0718432B88539900532648 /* teapot.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = teapot.jpg; sourceTree = "<group>"; };
+		EA0718442B88539900532648 /* cupandsaucer.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = cupandsaucer.jpg; sourceTree = "<group>"; };
+		EA0718452B88539900532648 /* stratocaster.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = stratocaster.jpg; sourceTree = "<group>"; };
+		EA0718462B88539900532648 /* tulip.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tulip.jpg; sourceTree = "<group>"; };
+		EA0718472B88539900532648 /* wateringcan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wateringcan.jpg; sourceTree = "<group>"; };
+		EA0718482B88539900532648 /* retrotv.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = retrotv.jpg; sourceTree = "<group>"; };
+		EA0718492B88539900532648 /* nike-pegasus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nike-pegasus.png"; sourceTree = "<group>"; };
+		EA07184A2B88539A00532648 /* redchair.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = redchair.jpg; sourceTree = "<group>"; };
+		EA07184B2B88539A00532648 /* gramophone.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = gramophone.jpg; sourceTree = "<group>"; };
+		EA07184C2B88539A00532648 /* drummertoy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = drummertoy.jpg; sourceTree = "<group>"; };
+		EA07184D2B88539A00532648 /* biplane.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = biplane.jpg; sourceTree = "<group>"; };
+		EA07184E2B88539A00532648 /* nike-air-force.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "nike-air-force.png"; sourceTree = "<group>"; };
+		EA07184F2B88539A00532648 /* toycar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = toycar.jpg; sourceTree = "<group>"; };
+		EA0718502B88539A00532648 /* vintagerobot2k.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vintagerobot2k.jpg; sourceTree = "<group>"; };
+		EA0718602B88565E00532648 /* ProductItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductItemView.swift; sourceTree = "<group>"; };
+		EA0718642B8890EA00532648 /* ProductionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionListViewModel.swift; sourceTree = "<group>"; };
+		EA0718662B88911E00532648 /* ProductionListView+Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ProductionListView+Configuration.swift"; sourceTree = "<group>"; };
+		EA0718682B88914C00532648 /* ProductionItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductionItemViewModel.swift; sourceTree = "<group>"; };
+		EA07186C2B88920700532648 /* ProductDetailIOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailIOSView.swift; sourceTree = "<group>"; };
+		EA07186E2B88967B00532648 /* ProductDetailVisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVisionView.swift; sourceTree = "<group>"; };
+		EA55C3582B8982DB00B8CBB0 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA0717EC2B88404500532648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0717FC2B88404700532648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0718062B88404700532648 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EA0717E62B88404500532648 = {
+			isa = PBXGroup;
+			children = (
+				EA0717F12B88404500532648 /* ShoppingApp */,
+				EA0718022B88404700532648 /* ShoppingAppTests */,
+				EA07180C2B88404700532648 /* ShoppingAppUITests */,
+				EA0717F02B88404500532648 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EA0717F02B88404500532648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA0717EF2B88404500532648 /* ShoppingApp.app */,
+				EA0717FF2B88404700532648 /* ShoppingAppTests.xctest */,
+				EA0718092B88404700532648 /* ShoppingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA0717F12B88404500532648 /* ShoppingApp */ = {
+			isa = PBXGroup;
+			children = (
+				EA07185F2B8853F200532648 /* Presentation */,
+				EA07181E2B88500100532648 /* Resource */,
+				EA0717F22B88404500532648 /* ShoppingAppApp.swift */,
+				EA0717F82B88404700532648 /* Preview Content */,
+			);
+			path = ShoppingApp;
+			sourceTree = "<group>";
+		};
+		EA0717F82B88404700532648 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA0717F92B88404700532648 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA0718022B88404700532648 /* ShoppingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				EA0718032B88404700532648 /* ShoppingAppTests.swift */,
+			);
+			path = ShoppingAppTests;
+			sourceTree = "<group>";
+		};
+		EA07180C2B88404700532648 /* ShoppingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EA07180D2B88404700532648 /* ShoppingAppUITests.swift */,
+				EA07180F2B88404700532648 /* ShoppingAppUITestsLaunchTests.swift */,
+			);
+			path = ShoppingAppUITests;
+			sourceTree = "<group>";
+		};
+		EA07181E2B88500100532648 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EA0717F62B88404700532648 /* Assets.xcassets */,
+				EA0718202B88501300532648 /* 3DModel */,
+				EA07181F2B88500A00532648 /* Image */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EA07181F2B88500A00532648 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EA07184D2B88539A00532648 /* biplane.jpg */,
+				EA0718442B88539900532648 /* cupandsaucer.jpg */,
+				EA07184C2B88539A00532648 /* drummertoy.jpg */,
+				EA07184B2B88539A00532648 /* gramophone.jpg */,
+				EA07184E2B88539A00532648 /* nike-air-force.png */,
+				EA0718492B88539900532648 /* nike-pegasus.png */,
+				EA07184A2B88539A00532648 /* redchair.jpg */,
+				EA0718482B88539900532648 /* retrotv.jpg */,
+				EA0718452B88539900532648 /* stratocaster.jpg */,
+				EA0718432B88539900532648 /* teapot.jpg */,
+				EA07184F2B88539A00532648 /* toycar.jpg */,
+				EA0718462B88539900532648 /* tulip.jpg */,
+				EA0718502B88539A00532648 /* vintagerobot2k.jpg */,
+				EA0718472B88539900532648 /* wateringcan.jpg */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
+		EA0718202B88501300532648 /* 3DModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA0718412B88537500532648 /* cup_saucer_set.usdz */,
+				EA07183F2B88536F00532648 /* flower_tulip.usdz */,
+				EA07183D2B88535500532648 /* teapot.usdz */,
+				EA07183B2B88532800532648 /* chair_swan.usdz */,
+				EA0718392B88532300532648 /* wateringcan.usdz */,
+				EA0718372B88531F00532648 /* gramophone.usdz */,
+				EA0718352B88531B00532648 /* tv_retro.usdz */,
+				EA0718332B88528B00532648 /* fender_stratocaster.usdz */,
+				EA0718312B88528700532648 /* robot_walk_idle.usdz */,
+				EA07182F2B88528100532648 /* toy_car.usdz */,
+				EA07182D2B88527B00532648 /* toy_drummer_idle.usdz */,
+				EA07182B2B88527000532648 /* toy_biplane_idle.usdz */,
+				EA0718232B8851B300532648 /* pegasus_trail.usdz */,
+				EA0718212B8851A200532648 /* air_force.usdz */,
+			);
+			path = 3DModel;
+			sourceTree = "<group>";
+		};
+		EA07185F2B8853F200532648 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EA0718632B8890D200532648 /* ViewModel */,
+				EA0718622B8890CB00532648 /* View */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EA0718622B8890CB00532648 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA07186B2B8891F500532648 /* ProductDetail */,
+				EA07186A2B8891C000532648 /* Products */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA0718632B8890D200532648 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA0718642B8890EA00532648 /* ProductionListViewModel.swift */,
+				EA0718682B88914C00532648 /* ProductionItemViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA07186A2B8891C000532648 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA07181C2B88471F00532648 /* ProductListView.swift */,
+				EA0718602B88565E00532648 /* ProductItemView.swift */,
+				EA0718662B88911E00532648 /* ProductionListView+Configuration.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
+		EA07186B2B8891F500532648 /* ProductDetail */ = {
+			isa = PBXGroup;
+			children = (
+				EA07186C2B88920700532648 /* ProductDetailIOSView.swift */,
+				EA07186E2B88967B00532648 /* ProductDetailVisionView.swift */,
+				EA55C3582B8982DB00B8CBB0 /* ProductDetailView.swift */,
+			);
+			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA0717EE2B88404500532648 /* ShoppingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0718132B88404700532648 /* Build configuration list for PBXNativeTarget "ShoppingApp" */;
+			buildPhases = (
+				EA0717EB2B88404500532648 /* Sources */,
+				EA0717EC2B88404500532648 /* Frameworks */,
+				EA0717ED2B88404500532648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShoppingApp;
+			productName = ShoppingApp;
+			productReference = EA0717EF2B88404500532648 /* ShoppingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EA0717FE2B88404700532648 /* ShoppingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0718162B88404700532648 /* Build configuration list for PBXNativeTarget "ShoppingAppTests" */;
+			buildPhases = (
+				EA0717FB2B88404700532648 /* Sources */,
+				EA0717FC2B88404700532648 /* Frameworks */,
+				EA0717FD2B88404700532648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA0718012B88404700532648 /* PBXTargetDependency */,
+			);
+			name = ShoppingAppTests;
+			productName = ShoppingAppTests;
+			productReference = EA0717FF2B88404700532648 /* ShoppingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EA0718082B88404700532648 /* ShoppingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA0718192B88404700532648 /* Build configuration list for PBXNativeTarget "ShoppingAppUITests" */;
+			buildPhases = (
+				EA0718052B88404700532648 /* Sources */,
+				EA0718062B88404700532648 /* Frameworks */,
+				EA0718072B88404700532648 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA07180B2B88404700532648 /* PBXTargetDependency */,
+			);
+			name = ShoppingAppUITests;
+			productName = ShoppingAppUITests;
+			productReference = EA0718092B88404700532648 /* ShoppingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA0717E72B88404500532648 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					EA0717EE2B88404500532648 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					EA0717FE2B88404700532648 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EA0717EE2B88404500532648;
+					};
+					EA0718082B88404700532648 = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = EA0717EE2B88404500532648;
+					};
+				};
+			};
+			buildConfigurationList = EA0717EA2B88404500532648 /* Build configuration list for PBXProject "ShoppingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA0717E62B88404500532648;
+			productRefGroup = EA0717F02B88404500532648 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA0717EE2B88404500532648 /* ShoppingApp */,
+				EA0717FE2B88404700532648 /* ShoppingAppTests */,
+				EA0718082B88404700532648 /* ShoppingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA0717ED2B88404500532648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA07183C2B88532800532648 /* chair_swan.usdz in Resources */,
+				EA07185B2B88539A00532648 /* biplane.jpg in Resources */,
+				EA0717FA2B88404700532648 /* Preview Assets.xcassets in Resources */,
+				EA0718542B88539A00532648 /* tulip.jpg in Resources */,
+				EA07185A2B88539A00532648 /* drummertoy.jpg in Resources */,
+				EA0718322B88528700532648 /* robot_walk_idle.usdz in Resources */,
+				EA0718532B88539A00532648 /* stratocaster.jpg in Resources */,
+				EA0718512B88539A00532648 /* teapot.jpg in Resources */,
+				EA07185E2B88539A00532648 /* vintagerobot2k.jpg in Resources */,
+				EA0718562B88539A00532648 /* retrotv.jpg in Resources */,
+				EA0718402B88536F00532648 /* flower_tulip.usdz in Resources */,
+				EA0718592B88539A00532648 /* gramophone.jpg in Resources */,
+				EA0718342B88528B00532648 /* fender_stratocaster.usdz in Resources */,
+				EA07183A2B88532300532648 /* wateringcan.usdz in Resources */,
+				EA07182C2B88527000532648 /* toy_biplane_idle.usdz in Resources */,
+				EA0718302B88528100532648 /* toy_car.usdz in Resources */,
+				EA0718242B8851B300532648 /* pegasus_trail.usdz in Resources */,
+				EA0717F72B88404700532648 /* Assets.xcassets in Resources */,
+				EA0718522B88539A00532648 /* cupandsaucer.jpg in Resources */,
+				EA0718552B88539A00532648 /* wateringcan.jpg in Resources */,
+				EA0718382B88531F00532648 /* gramophone.usdz in Resources */,
+				EA07183E2B88535500532648 /* teapot.usdz in Resources */,
+				EA0718422B88537500532648 /* cup_saucer_set.usdz in Resources */,
+				EA07185D2B88539A00532648 /* toycar.jpg in Resources */,
+				EA0718222B8851A200532648 /* air_force.usdz in Resources */,
+				EA0718572B88539A00532648 /* nike-pegasus.png in Resources */,
+				EA0718582B88539A00532648 /* redchair.jpg in Resources */,
+				EA07185C2B88539A00532648 /* nike-air-force.png in Resources */,
+				EA0718362B88531B00532648 /* tv_retro.usdz in Resources */,
+				EA07182E2B88527B00532648 /* toy_drummer_idle.usdz in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0717FD2B88404700532648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0718072B88404700532648 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA0717EB2B88404500532648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0718612B88565E00532648 /* ProductItemView.swift in Sources */,
+				EA07186D2B88920700532648 /* ProductDetailIOSView.swift in Sources */,
+				EA07181D2B88471F00532648 /* ProductListView.swift in Sources */,
+				EA0718672B88911E00532648 /* ProductionListView+Configuration.swift in Sources */,
+				EA0717F32B88404500532648 /* ShoppingAppApp.swift in Sources */,
+				EA0718692B88914C00532648 /* ProductionItemViewModel.swift in Sources */,
+				EA0718652B8890EA00532648 /* ProductionListViewModel.swift in Sources */,
+				EA07186F2B88967B00532648 /* ProductDetailVisionView.swift in Sources */,
+				EA55C3592B8982DB00B8CBB0 /* ProductDetailView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0717FB2B88404700532648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0718042B88404700532648 /* ShoppingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA0718052B88404700532648 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA0718102B88404700532648 /* ShoppingAppUITestsLaunchTests.swift in Sources */,
+				EA07180E2B88404700532648 /* ShoppingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA0718012B88404700532648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA0717EE2B88404500532648 /* ShoppingApp */;
+			targetProxy = EA0718002B88404700532648 /* PBXContainerItemProxy */;
+		};
+		EA07180B2B88404700532648 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EA0717EE2B88404500532648 /* ShoppingApp */;
+			targetProxy = EA07180A2B88404700532648 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		EA0718112B88404700532648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA0718122B88404700532648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA0718142B88404700532648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShoppingApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = phukieu.ShoppingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Debug;
+		};
+		EA0718152B88404700532648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ShoppingApp/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = phukieu.ShoppingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2,7";
+			};
+			name = Release;
+		};
+		EA0718172B88404700532648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = phukieu.ShoppingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoppingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoppingApp";
+			};
+			name = Debug;
+		};
+		EA0718182B88404700532648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = phukieu.ShoppingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ShoppingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ShoppingApp";
+			};
+			name = Release;
+		};
+		EA07181A2B88404700532648 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = phukieu.ShoppingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoppingApp;
+			};
+			name = Debug;
+		};
+		EA07181B2B88404700532648 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = phukieu.ShoppingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ShoppingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA0717EA2B88404500532648 /* Build configuration list for PBXProject "ShoppingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0718112B88404700532648 /* Debug */,
+				EA0718122B88404700532648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0718132B88404700532648 /* Build configuration list for PBXNativeTarget "ShoppingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0718142B88404700532648 /* Debug */,
+				EA0718152B88404700532648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0718162B88404700532648 /* Build configuration list for PBXNativeTarget "ShoppingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA0718172B88404700532648 /* Debug */,
+				EA0718182B88404700532648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA0718192B88404700532648 /* Build configuration list for PBXNativeTarget "ShoppingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA07181A2B88404700532648 /* Debug */,
+				EA07181B2B88404700532648 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA0717E72B88404500532648 /* Project object */;
+}
