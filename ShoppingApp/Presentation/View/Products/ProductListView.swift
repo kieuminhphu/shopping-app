@@ -13,8 +13,21 @@ protocol ProductListService {
 }
 
 struct ProductAPIItemViewModelApdater: ProductListService {
+    let repository: ProductRepository
+    let baseCurrency: Currency
+    
     func fetchProducts() async throws -> [ProductItemViewModel] {
-        return ProductItemViewModel.sampleData
+        let products = try await repository.fetchProducts()
+        return products.map { product in
+            let convertedPrice = PriceConverter(price: product.price).convertTo(currency: baseCurrency)
+            let formatedPrice = PriceFormatter(price: convertedPrice).priceDisplay()
+            return ProductItemViewModel(id: product.id,
+                                        name: product.name,
+                                        description: product.description,
+                                        image: product.image,
+                                        modelName: product.modelName,
+                                        price: formatedPrice)
+        }
     }
 }
 

@@ -12,7 +12,9 @@ struct ShoppingAppApp: App {
     
     var body: some Scene {
         WindowGroup(id: "Window") {
-            ProductListView(viewModel: ProductListView.ViewModel(service: ProductAPIItemViewModelApdater()))
+            // We will use DIContainer to handle DI in the future 
+            ProductListView(viewModel: ProductListView.ViewModel(service: ProductAPIItemViewModelApdater(repository: JSONProductRepository(),
+                                                                                                         baseCurrency: Currency.gpb)))
         }
         
         WindowGroup(id: "Product", for: String.self) { name in
