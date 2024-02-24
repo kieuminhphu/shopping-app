@@ -15,7 +15,7 @@ struct ProductItemView: View {
         VStack {
             ZStack {
                 Color.white
-                Image(item.image ?? "")
+                Image(item.image)
                     .scaledToFit()
             }
             VStack(alignment: .leading) {

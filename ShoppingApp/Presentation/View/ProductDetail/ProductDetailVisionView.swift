@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct ProductDetailVisionView: View {
+    @Environment(\.openWindow) private var openWindow
+    @Environment(\.dismissWindow) private var dismissWindow
+    @State var isPreviewShowing: Bool = false
+
     var item: ProductItemViewModel
     var body: some View {
             ZStack {
@@ -29,16 +33,33 @@ struct ProductDetailVisionView: View {
                     
                     ZStack {
                         Color.white
-                        Image(item.image ?? "")
+                        Image(item.image)
                             .resizable()
                     }
                 }
             }
+            .onDisappear(perform: {
+                dismissPreview()
+            })
             .toolbar {
-                Button(action: {}, label: {
-                    Text("Preview in your space")
-                })
+                Toggle("Preview in your space", isOn: $isPreviewShowing)
+                    .onChange(of: isPreviewShowing) { _, isPreviewShowing in
+                        if isPreviewShowing {
+                            openPreview(value: item.modelName)
+                        } else {
+                            dismissPreview()
+                        }
+                    }
+                    .toggleStyle(.button)
         }
+    }
+    
+    private func openPreview(value: String) {
+        openWindow(id: "Product", value: value)
+    }
+    
+    private func dismissPreview() {
+        dismissWindow(id: "Product")
     }
 }
 

@@ -49,6 +49,7 @@
 		EA07186D2B88920700532648 /* ProductDetailIOSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07186C2B88920700532648 /* ProductDetailIOSView.swift */; };
 		EA07186F2B88967B00532648 /* ProductDetailVisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA07186E2B88967B00532648 /* ProductDetailVisionView.swift */; };
 		EA55C3592B8982DB00B8CBB0 /* ProductDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55C3582B8982DB00B8CBB0 /* ProductDetailView.swift */; };
+		EA55C35C2B89963100B8CBB0 /* ProductEntityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55C35B2B89963100B8CBB0 /* ProductEntityView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +115,7 @@
 		EA07186C2B88920700532648 /* ProductDetailIOSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailIOSView.swift; sourceTree = "<group>"; };
 		EA07186E2B88967B00532648 /* ProductDetailVisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailVisionView.swift; sourceTree = "<group>"; };
 		EA55C3582B8982DB00B8CBB0 /* ProductDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailView.swift; sourceTree = "<group>"; };
+		EA55C35B2B89963100B8CBB0 /* ProductEntityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntityView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -261,6 +263,7 @@
 		EA0718622B8890CB00532648 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EA55C35A2B8995F400B8CBB0 /* ProductEntityView */,
 				EA07186B2B8891F500532648 /* ProductDetail */,
 				EA07186A2B8891C000532648 /* Products */,
 			);
@@ -294,6 +297,14 @@
 				EA55C3582B8982DB00B8CBB0 /* ProductDetailView.swift */,
 			);
 			path = ProductDetail;
+			sourceTree = "<group>";
+		};
+		EA55C35A2B8995F400B8CBB0 /* ProductEntityView */ = {
+			isa = PBXGroup;
+			children = (
+				EA55C35B2B89963100B8CBB0 /* ProductEntityView.swift */,
+			);
+			path = ProductEntityView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -457,6 +468,7 @@
 				EA0718612B88565E00532648 /* ProductItemView.swift in Sources */,
 				EA07186D2B88920700532648 /* ProductDetailIOSView.swift in Sources */,
 				EA07181D2B88471F00532648 /* ProductListView.swift in Sources */,
+				EA55C35C2B89963100B8CBB0 /* ProductEntityView.swift in Sources */,
 				EA0718672B88911E00532648 /* ProductionListView+Configuration.swift in Sources */,
 				EA0717F32B88404500532648 /* ShoppingAppApp.swift in Sources */,
 				EA0718692B88914C00532648 /* ProductionItemViewModel.swift in Sources */,

@@ -14,7 +14,7 @@ struct ProductDetailIOSView: View {
             VStack {
                 ZStack {
                     Color.white
-                    Image(item.image ?? "")
+                    Image(item.image)
                         .resizable()
                         .frame(width: 350)
                 }.frame(height: 350)
