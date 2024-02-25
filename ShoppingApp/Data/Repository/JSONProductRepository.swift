@@ -7,7 +7,7 @@
 
 import Foundation
 
-class JSONProductRepository: ProductRepository {
+struct JSONProductRepository: ProductRepository {
     let client: JSONClient = JSONClient()
     
     func fetchProducts() async throws -> [Product] {

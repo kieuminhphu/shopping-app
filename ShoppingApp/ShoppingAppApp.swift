@@ -13,13 +13,15 @@ struct ShoppingAppApp: App {
     var body: some Scene {
         WindowGroup(id: "Window") {
             // We will use DIContainer to handle DI in the future 
-            ProductListView(viewModel: ProductListView.ViewModel(service: ProductAPIItemViewModelApdater(repository: JSONProductRepository(),
-                                                                                                         baseCurrency: Currency.gpb)))
+            ProductListView(viewModel: ProductListView.ViewModel(getProductsUserCase: GetProductsUserCase(repository: JSONProductRepository()),
+                                                                                                          currentCurrency: Currency.gpb))
         }
         
+        #if os(visionOS)
         WindowGroup(id: "Product", for: String.self) { name in
             ProductEntityView(entityName: name.wrappedValue ?? "")
         }
         .windowStyle(.volumetric)
+        #endif
     }
 }

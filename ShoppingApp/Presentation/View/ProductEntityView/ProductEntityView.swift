@@ -8,6 +8,7 @@
 import SwiftUI
 import RealityKit
 
+#if os(visionOS)
 struct ProductEntityView: View {
     @State private var isDragging: Bool = false
     @State private var rotation: Angle = .zero
@@ -36,3 +37,5 @@ struct ProductEntityView: View {
 #Preview {
     ProductEntityView(entityName: "air_force")
 }
+
+#endif

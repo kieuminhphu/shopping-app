@@ -57,6 +57,7 @@
 		EA55C36E2B89E8E000B8CBB0 /* JSONProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55C36D2B89E8E000B8CBB0 /* JSONProductRepository.swift */; };
 		EA55C3702B89E92800B8CBB0 /* JSONClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55C36F2B89E92800B8CBB0 /* JSONClient.swift */; };
 		EA55C3722B89E93A00B8CBB0 /* JSProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA55C3712B89E93A00B8CBB0 /* JSProduct.swift */; };
+		EA5FD49E2B8B298500D54C68 /* GetProductsUserCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5FD49D2B8B298500D54C68 /* GetProductsUserCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -130,6 +131,7 @@
 		EA55C36D2B89E8E000B8CBB0 /* JSONProductRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONProductRepository.swift; sourceTree = "<group>"; };
 		EA55C36F2B89E92800B8CBB0 /* JSONClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONClient.swift; sourceTree = "<group>"; };
 		EA55C3712B89E93A00B8CBB0 /* JSProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSProduct.swift; sourceTree = "<group>"; };
+		EA5FD49D2B8B298500D54C68 /* GetProductsUserCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductsUserCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,9 +182,8 @@
 		EA0717F12B88404500532648 /* ShoppingApp */ = {
 			isa = PBXGroup;
 			children = (
+				EA5FD4982B8B28D800D54C68 /* Domain */,
 				EA55C3692B89DBF500B8CBB0 /* Data */,
-				EA55C3662B89D91C00B8CBB0 /* Model */,
-				EA55C3622B89D8C300B8CBB0 /* Repositories */,
 				EA07185F2B8853F200532648 /* Presentation */,
 				EA07181E2B88500100532648 /* Resource */,
 				EA0717F22B88404500532648 /* ShoppingAppApp.swift */,
@@ -333,15 +334,6 @@
 			path = ProductEntityView;
 			sourceTree = "<group>";
 		};
-		EA55C3622B89D8C300B8CBB0 /* Repositories */ = {
-			isa = PBXGroup;
-			children = (
-				EA55C3632B89D8F800B8CBB0 /* ProductRepository.swift */,
-				EA55C36D2B89E8E000B8CBB0 /* JSONProductRepository.swift */,
-			);
-			path = Repositories;
-			sourceTree = "<group>";
-		};
 		EA55C3662B89D91C00B8CBB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -354,7 +346,8 @@
 		EA55C3692B89DBF500B8CBB0 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				EA55C36A2B89DC1300B8CBB0 /* JSON */,
+				EA5FD49C2B8B293600D54C68 /* DataSource */,
+				EA5FD49B2B8B291100D54C68 /* Repository */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -382,6 +375,48 @@
 				EA55C36F2B89E92800B8CBB0 /* JSONClient.swift */,
 			);
 			path = Client;
+			sourceTree = "<group>";
+		};
+		EA5FD4982B8B28D800D54C68 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FD49A2B8B28F700D54C68 /* UserCase */,
+				EA55C3662B89D91C00B8CBB0 /* Model */,
+				EA5FD4992B8B28DE00D54C68 /* Repository */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		EA5FD4992B8B28DE00D54C68 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EA55C3632B89D8F800B8CBB0 /* ProductRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EA5FD49A2B8B28F700D54C68 /* UserCase */ = {
+			isa = PBXGroup;
+			children = (
+				EA5FD49D2B8B298500D54C68 /* GetProductsUserCase.swift */,
+			);
+			path = UserCase;
+			sourceTree = "<group>";
+		};
+		EA5FD49B2B8B291100D54C68 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				EA55C36D2B89E8E000B8CBB0 /* JSONProductRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EA5FD49C2B8B293600D54C68 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				EA55C36A2B89DC1300B8CBB0 /* JSON */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -558,6 +593,7 @@
 				EA55C3642B89D8F800B8CBB0 /* ProductRepository.swift in Sources */,
 				EA0718652B8890EA00532648 /* ProductionListViewModel.swift in Sources */,
 				EA07186F2B88967B00532648 /* ProductDetailVisionView.swift in Sources */,
+				EA5FD49E2B8B298500D54C68 /* GetProductsUserCase.swift in Sources */,
 				EA55C3592B8982DB00B8CBB0 /* ProductDetailView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -11,7 +11,7 @@ enum JSONError: Error {
     case fileNotFound
 }
 
-class JSONClient {
+struct JSONClient {
     func getData<T: Codable>(name: String) throws -> [T] {
         if let bundlePath = Bundle.main.path(forResource: name, ofType: "json"),
            let jsonData = try String(contentsOfFile: bundlePath).data(using: .utf8) {

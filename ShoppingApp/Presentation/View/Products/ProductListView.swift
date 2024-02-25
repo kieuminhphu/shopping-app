@@ -7,30 +7,6 @@
 
 import SwiftUI
 
-
-protocol ProductListService {
-    func fetchProducts() async throws -> [ProductItemViewModel]
-}
-
-struct ProductAPIItemViewModelApdater: ProductListService {
-    let repository: ProductRepository
-    let baseCurrency: Currency
-    
-    func fetchProducts() async throws -> [ProductItemViewModel] {
-        let products = try await repository.fetchProducts()
-        return products.map { product in
-            let convertedPrice = PriceConverter(price: product.price).convertTo(currency: baseCurrency)
-            let formatedPrice = PriceFormatter(price: convertedPrice).priceDisplay()
-            return ProductItemViewModel(id: product.id,
-                                        name: product.name,
-                                        description: product.description,
-                                        image: product.image,
-                                        modelName: product.modelName,
-                                        price: formatedPrice)
-        }
-    }
-}
-
 struct ProductListView: View {
     @State var viewModel: ViewModel
     
@@ -61,18 +37,19 @@ struct ProductListView: View {
             }
             .navigationTitle("Products")
             .task {
-                await viewModel.fetchProducts()
+                try? await viewModel.fetchProducts()
             }
         }
     }
 }
 
 #Preview {
-    struct PreviewProductListService: ProductListService {
-        func fetchProducts() async throws -> [ProductItemViewModel] {
-            return ProductItemViewModel.sampleData
+    struct PreviewGetProductsUserCase: GetProductsUserCaseProtocol {
+        func execute() async throws -> Result<[Product], Error> {
+            return Result.success(Product.sampleData)
         }
     }
-    return ProductListView(viewModel: ProductListView.ViewModel(service: PreviewProductListService()))
+    return ProductListView(viewModel: ProductListView.ViewModel(getProductsUserCase: PreviewGetProductsUserCase(),
+                                                                currentCurrency: Currency.gpb))
 }
 
