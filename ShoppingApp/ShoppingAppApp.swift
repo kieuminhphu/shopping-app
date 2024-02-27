@@ -16,7 +16,7 @@ struct ShoppingAppApp: App {
             ProductListView(viewModel: ProductListView.ViewModel(getProductsUseCase: GetRemoteProductsUseCase(repository: JSONProductRepository(),
                                                                                                               localRepository: SwiftDataProductRepository()),
                                                                  getLocalProductsUseCase: GetLocalProducsUseCase(repository: SwiftDataProductRepository()),
-                                                                 currentCurrency: Currency.gpb))
+                                                                 currentCurrency: Currency.gbp))
         }
         
 #if os(visionOS)

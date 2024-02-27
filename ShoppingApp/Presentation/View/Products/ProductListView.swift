@@ -48,6 +48,6 @@ struct ProductListView: View {
     }
     return ProductListView(viewModel: ProductListView.ViewModel(getProductsUseCase: PreviewGetProductsUseCase(),
                                                                 getLocalProductsUseCase: PreviewGetProductsUseCase(),
-                                                                currentCurrency: Currency.gpb))
+                                                                currentCurrency: Currency.gbp))
 }
 
