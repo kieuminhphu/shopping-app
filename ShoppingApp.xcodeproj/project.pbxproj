@@ -69,6 +69,8 @@
 		EA64204D2B8C8C260038082C /* SDProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64204C2B8C8C260038082C /* SDProduct.swift */; };
 		EA64204F2B8C8C310038082C /* SwiftDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA64204E2B8C8C310038082C /* SwiftDataProvider.swift */; };
 		EA6420512B8C8C360038082C /* SwiftDataProductRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6420502B8C8C360038082C /* SwiftDataProductRepository.swift */; };
+		EA67090B2B8E127100F6FE8F /* ProductListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67090A2B8E127100F6FE8F /* ProductListViewModelTests.swift */; };
+		EA67090E2B8E12EF00F6FE8F /* MockGetProductsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA67090D2B8E12EF00F6FE8F /* MockGetProductsUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +156,8 @@
 		EA64204C2B8C8C260038082C /* SDProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDProduct.swift; sourceTree = "<group>"; };
 		EA64204E2B8C8C310038082C /* SwiftDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDataProvider.swift; sourceTree = "<group>"; };
 		EA6420502B8C8C360038082C /* SwiftDataProductRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftDataProductRepository.swift; sourceTree = "<group>"; };
+		EA67090A2B8E127100F6FE8F /* ProductListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductListViewModelTests.swift; sourceTree = "<group>"; };
+		EA67090D2B8E12EF00F6FE8F /* MockGetProductsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockGetProductsUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +230,7 @@
 		EA0718022B88404700532648 /* ShoppingAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				EA6709092B8E125900F6FE8F /* Presentation */,
 				EA55B9912B8DDFAF004A8922 /* Core */,
 				EA55B9822B8DC96A004A8922 /* Domain */,
 				EA0718032B88404700532648 /* ShoppingAppTests.swift */,
@@ -516,6 +521,31 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		EA6709082B8E124400F6FE8F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA67090A2B8E127100F6FE8F /* ProductListViewModelTests.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA6709092B8E125900F6FE8F /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				EA67090C2B8E12D900F6FE8F /* MockUseCase */,
+				EA6709082B8E124400F6FE8F /* ViewModel */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		EA67090C2B8E12D900F6FE8F /* MockUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				EA67090D2B8E12EF00F6FE8F /* MockGetProductsUseCase.swift */,
+			);
+			path = MockUseCase;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -708,8 +738,10 @@
 				EA55B98D2B8DDD0D004A8922 /* GetLocalProductsUseCaseTests.swift in Sources */,
 				EA55B9852B8DC9AB004A8922 /* GetRemoteProductsUseCaseTests.swift in Sources */,
 				EA55B9932B8DDFC4004A8922 /* PriceFormatterTests.swift in Sources */,
+				EA67090B2B8E127100F6FE8F /* ProductListViewModelTests.swift in Sources */,
 				EA55B98B2B8DD162004A8922 /* MockRepository.swift in Sources */,
 				EA55B9952B8DE0E3004A8922 /* PriceConverterTests.swift in Sources */,
+				EA67090E2B8E12EF00F6FE8F /* MockGetProductsUseCase.swift in Sources */,
 				EA0718042B88404700532648 /* ShoppingAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
