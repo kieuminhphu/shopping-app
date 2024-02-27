@@ -13,43 +13,41 @@ struct ProductListView: View {
     var body: some View {
         
         NavigationStack {
-            ScrollView {
-                let columns = [GridItem(.adaptive(minimum: configuration.minimumWidthOfCell))]
-                LazyVGrid(columns: columns,
-                          spacing: 16) {
-                    ForEach(viewModel.items) { item in
-                        NavigationLink(value: item) {
-                            ProductItemView(item: item)
-                                .background(configuration.cardBackgroundColor)
-                                .clipShape(RoundedRectangle(cornerRadius: 16.0))
-                                .shadow(color: Color.black.opacity(0.2), radius: 10, y: 5)
-                                
-                        }
-                        .buttonStyle(.plain)
-                    }
+            grid.navigationDestination(for: ProductItemViewModel.self) { item in
+                    ProductDetailView(item: item)
+                        .navigationTitle("Product detail")
                 }
-                          .padding()
-                        
-            }
-            .navigationDestination(for: ProductItemViewModel.self) { item in
-                ProductDetailView(item: item)
-                    .navigationTitle("Product detail")
-            }
-            .navigationTitle("Products")
-            .task {
-                try? await viewModel.fetchProducts()
-            }
+                .navigationTitle("Products")
+                .alert(viewModel.errorMessage, isPresented: $viewModel.showErrorMessage, actions: {
+                    Button {
+                        viewModel.showErrorMessage.toggle()
+                    } label: {
+                        Text("OK")
+                    }
+                })
+                .task {
+                    await viewModel.fetchProducts()
+                }
         }
+        
+    }
+    
+    var grid: some View {
+#if os(visionOS)
+        ProductListVisionView(items: viewModel.items)
+#else
+        ProductListIOSView(items: viewModel.items)
+#endif
     }
 }
-
 #Preview {
-    struct PreviewGetProductsUserCase: GetProductsUserCaseProtocol {
-        func execute() async throws -> Result<[Product], Error> {
-            return Result.success(Product.sampleData)
+    struct PreviewGetProductsUseCase: GetProductsUseCaseProtocol {
+        func execute() async -> Result<[Product], Error> {
+            return .success(Product.sampleData)
         }
     }
-    return ProductListView(viewModel: ProductListView.ViewModel(getProductsUserCase: PreviewGetProductsUserCase(),
+    return ProductListView(viewModel: ProductListView.ViewModel(getProductsUseCase: PreviewGetProductsUseCase(),
+                                                                getLocalProductsUseCase: PreviewGetProductsUseCase(),
                                                                 currentCurrency: Currency.gpb))
 }
 

@@ -17,7 +17,7 @@ struct Product {
 }
 
 extension Product {
-    static func fromJSONModel(model: JSONClient.Product) -> Product {
+    static func convert(model: JSONClient.Product) -> Product {
         return Product(id: model.id,
                        name: model.name,
                        description: model.description,
@@ -25,6 +25,28 @@ extension Product {
                        modelName: model.model,
                        price: Price(value: model.price,
                                     currency: Currency(rawValue: model.currency) ?? Currency.usd))
+    }
+}
+
+extension Product {
+    static func convert(model: SwiftDataProvider.Product) -> Product {
+        return Product(id: model.id,
+                       name: model.name,
+                       description: model.information,
+                       image: model.image,
+                       modelName: model.model,
+                       price: Price(value: model.price,
+                                    currency: Currency(rawValue: model.currency) ?? Currency.usd))
+    }
+    
+    func convertToSwiftDataModel() -> SwiftDataProvider.Product {
+        return SwiftDataProvider.Product(id: self.id,
+                                         name: self.name,
+                                         information: self.description,
+                                         image: self.image,
+                                         model: self.modelName,
+                                         price: self.price.value,
+                                         currency: self.price.currency.rawValue)
     }
 }
 

@@ -13,7 +13,7 @@ struct JSONProductRepository: ProductRepository {
     func fetchProducts() async throws -> [Product] {
         let products: [JSONClient.Product] = try client.getData(name: "product")
         return products.map { product in
-            return Product.fromJSONModel(model: product)
+            return Product.convert(model: product)
         }
     }
 }
